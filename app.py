@@ -1,6 +1,7 @@
 # app.py
 import io
 import json
+import logging
 import os
 import boto3
 import pandas as pd
@@ -10,10 +11,22 @@ from fastapi import FastAPI, BackgroundTasks, Request
 from baseline import BaselineManager
 from processor import process_file
 
+# ── Logging configuration ────────────────────────────────────────────────────
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s %(levelname)s %(name)s %(message)s",
+    handlers=[
+        logging.StreamHandler(),
+        logging.FileHandler("anomaly_detection.log"),
+    ]
+)
+logger = logging.getLogger(__name__)
+
 app = FastAPI(title="Anomaly Detection Pipeline")
 
 s3 = boto3.client("s3")
 BUCKET_NAME = os.environ["BUCKET_NAME"]
+logger.info(f"App starting with BUCKET_NAME={BUCKET_NAME}")
 
 # ── SNS subscription confirmation + message handler ──────────────────────────
 
