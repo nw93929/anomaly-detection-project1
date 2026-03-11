@@ -1,7 +1,5 @@
 # Anomaly Detection on Time Series Data
 
-> [Full Project Instructions](FULLINSTRUCTIONS.md) | [Testing Log](testing.md)
-
 When a new batch of time series observations arrives — IoT sensor readings, 
 server metrics, weather station data, financial tick data — the instance 
 runs an anomaly detection pass using scikit-learn's IsolationForest, then writes back a scored version of the file where 
