@@ -47,3 +47,37 @@ cat /mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detectio
 **Result:** PASS - Returns `{"detail":"An error occurred (AccessDenied)..."}` — app did NOT crash
 
 ---
+
+## Phase 4: CloudFormation Stack Deployment
+
+### Test 4.1: Stack creates successfully
+**How:** `aws cloudformation describe-stacks --stack-name anomaly-detection --query 'Stacks[0].StackStatus'`
+**Result:** PASS - `CREATE_COMPLETE`
+
+### Test 4.2: /health responds via Elastic IP
+**How:** `curl http://3.215.93.129:8000/health`
+**Result:** PASS - `{"status":"ok","bucket":"anomaly-detection-s3bucket-ajvymm13wcon","timestamp":"2026-03-11T02:29:37.270951"}`
+
+### Test 4.3: SNS subscription confirmed
+**How:** `aws sns list-subscriptions-by-topic --topic-arn arn:aws:sns:us-east-1:193389677831:ds5220-dp1`
+**Result:** PASS - SubscriptionArn shows full ARN (confirmed, not pending)
+
+---
+
+## Phase 5: End-to-End Integration Test
+
+### Test 5.1: Upload test CSV triggers full pipeline
+**How:**
+```bash
+aws s3 cp sensors_20260224T001051.csv s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/test_manual.csv
+```
+**Result:** PASS - All S3 paths populated:
+- `processed/test_manual.csv` (12754 bytes) + `test_manual_summary.json` (329 bytes)
+- `state/baseline.json` (574 bytes)
+- `logs/anomaly_detection.log` (10446 bytes)
+
+### Test 5.2: /anomalies/recent returns detected anomalies
+**How:** `curl http://3.215.93.129:8000/anomalies/recent`
+**Result:** PASS - 6 anomalies detected with Z-score flags (wind_speed, pressure, humidity) and IsolationForest flags
+
+---
