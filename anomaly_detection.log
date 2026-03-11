@@ -1,0 +1,105 @@
+2026-03-10 21:54:34,951 INFO app App starting with BUCKET_NAME=test-bucket
+2026-03-10 21:54:36,033 INFO uvicorn.error Will watch for changes in these directories: ['/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1']
+2026-03-10 21:54:36,038 INFO uvicorn.error Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-03-10 21:54:36,039 INFO uvicorn.error Started reloader process [531] using WatchFiles
+2026-03-10 21:55:18,905 INFO app App starting with BUCKET_NAME=test-bucket
+2026-03-10 21:55:19,340 INFO uvicorn.error Started server process [555]
+2026-03-10 21:55:19,342 INFO uvicorn.error Waiting for application startup.
+2026-03-10 21:55:19,344 INFO uvicorn.error Application startup complete.
+2026-03-10 21:56:07,618 INFO watchfiles.main 1 change detected
+2026-03-10 21:57:59,917 INFO watchfiles.main 1 change detected
+2026-03-10 21:59:57,822 INFO watchfiles.main 1 change detected
+2026-03-10 21:59:58,203 INFO watchfiles.main 2 changes detected
+2026-03-10 22:02:07,434 INFO watchfiles.main 1 change detected
+2026-03-10 22:02:07,788 INFO watchfiles.main 2 changes detected
+2026-03-10 22:02:07,792 WARNING uvicorn.error WatchFiles detected changes in 'app.py'. Reloading...
+2026-03-10 22:02:07,817 INFO uvicorn.error Shutting down
+2026-03-10 22:02:07,925 INFO uvicorn.error Waiting for application shutdown.
+2026-03-10 22:02:07,927 INFO uvicorn.error Application shutdown complete.
+2026-03-10 22:02:07,930 INFO uvicorn.error Finished server process [555]
+2026-03-10 22:03:17,624 INFO app App starting with BUCKET_NAME=test-bucket
+2026-03-10 22:03:18,190 INFO uvicorn.error Started server process [655]
+2026-03-10 22:03:18,193 INFO uvicorn.error Waiting for application startup.
+2026-03-10 22:03:18,195 INFO uvicorn.error Application startup complete.
+2026-03-10 22:03:59,744 INFO watchfiles.main 3 changes detected
+2026-03-10 22:04:00,114 INFO watchfiles.main 1 change detected
+2026-03-10 22:04:00,485 INFO watchfiles.main 4 changes detected
+2026-03-10 22:04:00,486 WARNING uvicorn.error WatchFiles detected changes in 'processor.py', 'detector.py', 'baseline.py'. Reloading...
+2026-03-10 22:04:00,578 INFO uvicorn.error Shutting down
+2026-03-10 22:04:00,683 INFO uvicorn.error Waiting for application shutdown.
+2026-03-10 22:04:00,684 INFO uvicorn.error Application shutdown complete.
+2026-03-10 22:04:00,685 INFO uvicorn.error Finished server process [655]
+2026-03-10 22:04:49,024 INFO app App starting with BUCKET_NAME=test-bucket
+2026-03-10 22:04:49,560 INFO uvicorn.error Started server process [681]
+2026-03-10 22:04:49,563 INFO uvicorn.error Waiting for application startup.
+2026-03-10 22:04:49,565 INFO uvicorn.error Application startup complete.
+2026-03-10 22:05:37,658 INFO watchfiles.main 3 changes detected
+2026-03-10 22:05:38,188 INFO watchfiles.main 1 change detected
+2026-03-10 22:06:23,164 ERROR app Error fetching recent anomalies: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+Traceback (most recent call last):
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/app.py", line 83, in get_recent_anomalies
+    [
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 272, in __iter__
+    response = self._make_request(current_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 360, in _make_request
+    return self._method(**current_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 602, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 1078, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.AccessDenied: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+2026-03-10 22:06:26,429 ERROR app Error fetching recent anomalies: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+Traceback (most recent call last):
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/app.py", line 83, in get_recent_anomalies
+    [
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 272, in __iter__
+    response = self._make_request(current_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 360, in _make_request
+    return self._method(**current_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 602, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 1078, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.AccessDenied: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+2026-03-10 22:06:29,691 ERROR app Error fetching recent anomalies: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+Traceback (most recent call last):
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/app.py", line 83, in get_recent_anomalies
+    [
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 272, in __iter__
+    response = self._make_request(current_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 360, in _make_request
+    return self._method(**current_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 602, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 1078, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.AccessDenied: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+2026-03-10 22:07:23,261 INFO watchfiles.main 1 change detected
+2026-03-10 22:07:21,546 INFO watchfiles.main 2 changes detected

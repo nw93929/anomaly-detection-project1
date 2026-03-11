@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 import json
+import logging
 import math
 import boto3
 from datetime import datetime
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 s3 = boto3.client("s3")
 
@@ -21,18 +24,28 @@ class BaselineManager:
     def load(self) -> dict:
         try:
             response = s3.get_object(Bucket=self.bucket, Key=self.baseline_key)
-            return json.loads(response["Body"].read())
+            baseline = json.loads(response["Body"].read())
+            logger.info("Baseline loaded from S3")
+            return baseline
         except s3.exceptions.NoSuchKey:
+            logger.info("No existing baseline found, starting fresh")
+            return {}
+        except Exception as e:
+            logger.error(f"Error loading baseline: {e}", exc_info=True)
             return {}
 
     def save(self, baseline: dict):
-        baseline["last_updated"] = datetime.utcnow().isoformat()
-        s3.put_object(
-            Bucket=self.bucket,
-            Key=self.baseline_key,
-            Body=json.dumps(baseline, indent=2),
-            ContentType="application/json"
-        )
+        try:
+            baseline["last_updated"] = datetime.utcnow().isoformat()
+            s3.put_object(
+                Bucket=self.bucket,
+                Key=self.baseline_key,
+                Body=json.dumps(baseline, indent=2),
+                ContentType="application/json"
+            )
+            logger.info("Baseline saved to S3")
+        except Exception as e:
+            logger.error(f"Error saving baseline: {e}", exc_info=True)
 
     def update(self, baseline: dict, channel: str, new_values: list[float]) -> dict:
         """
