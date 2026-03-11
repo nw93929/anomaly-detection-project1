@@ -1,0 +1,1480 @@
+2026-03-10 21:54:34,951 INFO app App starting with BUCKET_NAME=test-bucket
+2026-03-10 21:54:36,033 INFO uvicorn.error Will watch for changes in these directories: ['/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1']
+2026-03-10 21:54:36,038 INFO uvicorn.error Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-03-10 21:54:36,039 INFO uvicorn.error Started reloader process [531] using WatchFiles
+2026-03-10 21:55:18,905 INFO app App starting with BUCKET_NAME=test-bucket
+2026-03-10 21:55:19,340 INFO uvicorn.error Started server process [555]
+2026-03-10 21:55:19,342 INFO uvicorn.error Waiting for application startup.
+2026-03-10 21:55:19,344 INFO uvicorn.error Application startup complete.
+2026-03-10 21:56:07,618 INFO watchfiles.main 1 change detected
+2026-03-10 21:57:59,917 INFO watchfiles.main 1 change detected
+2026-03-10 21:59:57,822 INFO watchfiles.main 1 change detected
+2026-03-10 21:59:58,203 INFO watchfiles.main 2 changes detected
+2026-03-10 22:02:07,434 INFO watchfiles.main 1 change detected
+2026-03-10 22:02:07,788 INFO watchfiles.main 2 changes detected
+2026-03-10 22:02:07,792 WARNING uvicorn.error WatchFiles detected changes in 'app.py'. Reloading...
+2026-03-10 22:02:07,817 INFO uvicorn.error Shutting down
+2026-03-10 22:02:07,925 INFO uvicorn.error Waiting for application shutdown.
+2026-03-10 22:02:07,927 INFO uvicorn.error Application shutdown complete.
+2026-03-10 22:02:07,930 INFO uvicorn.error Finished server process [555]
+2026-03-10 22:03:17,624 INFO app App starting with BUCKET_NAME=test-bucket
+2026-03-10 22:03:18,190 INFO uvicorn.error Started server process [655]
+2026-03-10 22:03:18,193 INFO uvicorn.error Waiting for application startup.
+2026-03-10 22:03:18,195 INFO uvicorn.error Application startup complete.
+2026-03-10 22:03:59,744 INFO watchfiles.main 3 changes detected
+2026-03-10 22:04:00,114 INFO watchfiles.main 1 change detected
+2026-03-10 22:04:00,485 INFO watchfiles.main 4 changes detected
+2026-03-10 22:04:00,486 WARNING uvicorn.error WatchFiles detected changes in 'processor.py', 'detector.py', 'baseline.py'. Reloading...
+2026-03-10 22:04:00,578 INFO uvicorn.error Shutting down
+2026-03-10 22:04:00,683 INFO uvicorn.error Waiting for application shutdown.
+2026-03-10 22:04:00,684 INFO uvicorn.error Application shutdown complete.
+2026-03-10 22:04:00,685 INFO uvicorn.error Finished server process [655]
+2026-03-10 22:04:49,024 INFO app App starting with BUCKET_NAME=test-bucket
+2026-03-10 22:04:49,560 INFO uvicorn.error Started server process [681]
+2026-03-10 22:04:49,563 INFO uvicorn.error Waiting for application startup.
+2026-03-10 22:04:49,565 INFO uvicorn.error Application startup complete.
+2026-03-10 22:05:37,658 INFO watchfiles.main 3 changes detected
+2026-03-10 22:05:38,188 INFO watchfiles.main 1 change detected
+2026-03-10 22:06:23,164 ERROR app Error fetching recent anomalies: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+Traceback (most recent call last):
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/app.py", line 83, in get_recent_anomalies
+    [
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 272, in __iter__
+    response = self._make_request(current_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 360, in _make_request
+    return self._method(**current_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 602, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 1078, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.AccessDenied: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+2026-03-10 22:06:26,429 ERROR app Error fetching recent anomalies: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+Traceback (most recent call last):
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/app.py", line 83, in get_recent_anomalies
+    [
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 272, in __iter__
+    response = self._make_request(current_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 360, in _make_request
+    return self._method(**current_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 602, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 1078, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.AccessDenied: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+2026-03-10 22:06:29,691 ERROR app Error fetching recent anomalies: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+Traceback (most recent call last):
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/app.py", line 83, in get_recent_anomalies
+    [
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 272, in __iter__
+    response = self._make_request(current_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/paginate.py", line 360, in _make_request
+    return self._method(**current_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 602, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/wanns/OneDrive/Desktop/Coding/MSDS/ds5220cloud/anomaly-detection-project1/venv/lib/python3.12/site-packages/botocore/client.py", line 1078, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.AccessDenied: An error occurred (AccessDenied) when calling the ListObjectsV2 operation: Access Denied
+2026-03-10 22:07:23,261 INFO watchfiles.main 1 change detected
+2026-03-10 22:07:21,546 INFO watchfiles.main 2 changes detected
+2026-03-11 02:27:15,834 INFO app App starting with BUCKET_NAME=anomaly-detection-s3bucket-ajvymm13wcon
+2026-03-11 02:27:16,200 INFO uvicorn.error Started server process [2873]
+2026-03-11 02:27:16,201 INFO uvicorn.error Waiting for application startup.
+2026-03-11 02:27:16,201 INFO uvicorn.error Application startup complete.
+2026-03-11 02:27:16,203 INFO uvicorn.error Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-03-11 02:29:44,178 INFO app Received SNS message type: SubscriptionConfirmation
+2026-03-11 02:29:44,344 INFO app SNS subscription confirmed
+2026-03-11 07:22:48,723 WARNING uvicorn.error Invalid HTTP request received.
+2026-03-11 12:17:34,505 WARNING uvicorn.error Invalid HTTP request received.
+2026-03-11 16:03:13,343 INFO app Received SNS message type: Notification
+2026-03-11 16:03:13,343 INFO app Dispatching processing for: raw/test_manual.csv
+2026-03-11 16:03:13,345 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/test_manual.csv
+2026-03-11 16:03:13,509 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:03:13,581 INFO baseline No existing baseline found, starting fresh
+2026-03-11 16:03:13,599 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:03:13,835 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:03:13,912 INFO baseline Baseline saved to S3
+2026-03-11 16:03:13,912 INFO processor Baseline updated and saved to S3
+2026-03-11 16:03:13,971 INFO processor Synced log file to S3
+2026-03-11 16:03:14,001 INFO processor Done: 6/100 anomalies flagged for raw/test_manual.csv
+2026-03-11 16:10:33,681 INFO app Received SNS message type: Notification
+2026-03-11 16:10:33,681 INFO app Dispatching processing for: raw/sensors_20260311T161035.csv
+2026-03-11 16:10:33,682 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161035.csv
+2026-03-11 16:10:33,763 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:10:33,837 INFO baseline No existing baseline found, starting fresh
+2026-03-11 16:10:33,838 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:10:34,001 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:10:34,075 INFO baseline Baseline saved to S3
+2026-03-11 16:10:34,075 INFO processor Baseline updated and saved to S3
+2026-03-11 16:10:34,105 INFO processor Synced log file to S3
+2026-03-11 16:10:34,140 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T161035.csv
+2026-03-11 16:11:29,024 INFO app Received SNS message type: Notification
+2026-03-11 16:11:29,024 INFO app Dispatching processing for: raw/sensors_20260311T161130.csv
+2026-03-11 16:11:29,025 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161130.csv
+2026-03-11 16:11:29,101 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:11:29,199 INFO baseline Baseline loaded from S3
+2026-03-11 16:11:29,200 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:11:29,363 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:11:29,426 INFO baseline Baseline saved to S3
+2026-03-11 16:11:29,426 INFO processor Baseline updated and saved to S3
+2026-03-11 16:11:29,457 INFO processor Synced log file to S3
+2026-03-11 16:11:29,487 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T161130.csv
+2026-03-11 16:12:24,615 INFO app Received SNS message type: Notification
+2026-03-11 16:12:24,615 INFO app Dispatching processing for: raw/sensors_20260311T161225.csv
+2026-03-11 16:12:24,616 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161225.csv
+2026-03-11 16:12:24,693 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:12:24,782 INFO baseline Baseline loaded from S3
+2026-03-11 16:12:24,784 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:12:24,946 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:12:25,052 INFO baseline Baseline saved to S3
+2026-03-11 16:12:25,052 INFO processor Baseline updated and saved to S3
+2026-03-11 16:12:25,129 INFO processor Synced log file to S3
+2026-03-11 16:12:25,158 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T161225.csv
+2026-03-11 16:13:19,958 INFO app Received SNS message type: Notification
+2026-03-11 16:13:19,958 INFO app Dispatching processing for: raw/sensors_20260311T161320.csv
+2026-03-11 16:13:19,959 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161320.csv
+2026-03-11 16:13:20,036 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:13:20,110 INFO baseline Baseline loaded from S3
+2026-03-11 16:13:20,111 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:13:20,273 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:13:20,335 INFO baseline Baseline saved to S3
+2026-03-11 16:13:20,335 INFO processor Baseline updated and saved to S3
+2026-03-11 16:13:20,363 INFO processor Synced log file to S3
+2026-03-11 16:13:20,390 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T161320.csv
+2026-03-11 16:14:14,852 INFO app Received SNS message type: Notification
+2026-03-11 16:14:14,852 INFO app Dispatching processing for: raw/sensors_20260311T161415.csv
+2026-03-11 16:14:14,853 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161415.csv
+2026-03-11 16:14:14,936 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:14:15,029 INFO baseline Baseline loaded from S3
+2026-03-11 16:14:15,030 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:14:15,190 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:14:15,249 INFO baseline Baseline saved to S3
+2026-03-11 16:14:15,249 INFO processor Baseline updated and saved to S3
+2026-03-11 16:14:15,285 INFO processor Synced log file to S3
+2026-03-11 16:14:15,322 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T161415.csv
+2026-03-11 16:15:09,436 INFO app Received SNS message type: Notification
+2026-03-11 16:15:09,437 INFO app Dispatching processing for: raw/sensors_20260311T161509.csv
+2026-03-11 16:15:09,438 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161509.csv
+2026-03-11 16:15:09,516 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:15:09,592 INFO baseline Baseline loaded from S3
+2026-03-11 16:15:09,593 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:15:09,752 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:15:09,812 INFO baseline Baseline saved to S3
+2026-03-11 16:15:09,812 INFO processor Baseline updated and saved to S3
+2026-03-11 16:15:09,843 INFO processor Synced log file to S3
+2026-03-11 16:15:09,894 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T161509.csv
+2026-03-11 16:16:04,778 INFO app Received SNS message type: Notification
+2026-03-11 16:16:04,778 INFO app Dispatching processing for: raw/sensors_20260311T161604.csv
+2026-03-11 16:16:04,779 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161604.csv
+2026-03-11 16:16:04,853 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:16:04,924 INFO baseline Baseline loaded from S3
+2026-03-11 16:16:04,925 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:16:05,089 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:16:05,205 INFO baseline Baseline saved to S3
+2026-03-11 16:16:05,205 INFO processor Baseline updated and saved to S3
+2026-03-11 16:16:05,237 INFO processor Synced log file to S3
+2026-03-11 16:16:05,269 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T161604.csv
+2026-03-11 16:17:00,359 INFO app Received SNS message type: Notification
+2026-03-11 16:17:00,359 INFO app Dispatching processing for: raw/sensors_20260311T161659.csv
+2026-03-11 16:17:00,360 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161659.csv
+2026-03-11 16:17:00,433 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:17:00,507 INFO baseline Baseline loaded from S3
+2026-03-11 16:17:00,508 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:17:00,667 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:17:00,726 INFO baseline Baseline saved to S3
+2026-03-11 16:17:00,726 INFO processor Baseline updated and saved to S3
+2026-03-11 16:17:00,757 INFO processor Synced log file to S3
+2026-03-11 16:17:00,785 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T161659.csv
+2026-03-11 16:17:54,920 INFO app Received SNS message type: Notification
+2026-03-11 16:17:54,920 INFO app Dispatching processing for: raw/sensors_20260311T161753.csv
+2026-03-11 16:17:54,921 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161753.csv
+2026-03-11 16:17:54,998 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:17:55,092 INFO baseline Baseline loaded from S3
+2026-03-11 16:17:55,093 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:17:55,256 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:17:55,318 INFO baseline Baseline saved to S3
+2026-03-11 16:17:55,318 INFO processor Baseline updated and saved to S3
+2026-03-11 16:17:55,349 INFO processor Synced log file to S3
+2026-03-11 16:17:55,377 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T161753.csv
+2026-03-11 16:18:49,752 INFO app Received SNS message type: Notification
+2026-03-11 16:18:49,752 INFO app Dispatching processing for: raw/sensors_20260311T161850.csv
+2026-03-11 16:18:49,753 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161850.csv
+2026-03-11 16:18:49,827 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:18:49,942 INFO baseline Baseline loaded from S3
+2026-03-11 16:18:49,943 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:18:50,103 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 16:18:50,169 INFO baseline Baseline saved to S3
+2026-03-11 16:18:50,169 INFO processor Baseline updated and saved to S3
+2026-03-11 16:18:50,247 INFO processor Synced log file to S3
+2026-03-11 16:18:50,282 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T161850.csv
+2026-03-11 16:19:44,361 INFO app Received SNS message type: Notification
+2026-03-11 16:19:44,361 INFO app Dispatching processing for: raw/sensors_20260311T161945.csv
+2026-03-11 16:19:44,362 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T161945.csv
+2026-03-11 16:19:44,447 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:19:44,591 INFO baseline Baseline loaded from S3
+2026-03-11 16:19:44,592 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:19:44,753 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:19:44,847 INFO baseline Baseline saved to S3
+2026-03-11 16:19:44,847 INFO processor Baseline updated and saved to S3
+2026-03-11 16:19:44,877 INFO processor Synced log file to S3
+2026-03-11 16:19:44,910 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T161945.csv
+2026-03-11 16:20:39,160 INFO app Received SNS message type: Notification
+2026-03-11 16:20:39,160 INFO app Dispatching processing for: raw/sensors_20260311T162039.csv
+2026-03-11 16:20:39,161 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162039.csv
+2026-03-11 16:20:39,247 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:20:39,352 INFO baseline Baseline loaded from S3
+2026-03-11 16:20:39,353 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:20:39,516 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 16:20:39,580 INFO baseline Baseline saved to S3
+2026-03-11 16:20:39,581 INFO processor Baseline updated and saved to S3
+2026-03-11 16:20:39,607 INFO processor Synced log file to S3
+2026-03-11 16:20:39,681 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T162039.csv
+2026-03-11 16:21:33,708 INFO app Received SNS message type: Notification
+2026-03-11 16:21:33,708 INFO app Dispatching processing for: raw/sensors_20260311T162134.csv
+2026-03-11 16:21:33,709 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162134.csv
+2026-03-11 16:21:33,786 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:21:33,968 INFO baseline Baseline loaded from S3
+2026-03-11 16:21:33,970 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:21:34,132 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:21:34,268 INFO baseline Baseline saved to S3
+2026-03-11 16:21:34,268 INFO processor Baseline updated and saved to S3
+2026-03-11 16:21:34,336 INFO processor Synced log file to S3
+2026-03-11 16:21:34,379 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T162134.csv
+2026-03-11 16:22:28,381 INFO app Received SNS message type: Notification
+2026-03-11 16:22:28,381 INFO app Dispatching processing for: raw/sensors_20260311T162228.csv
+2026-03-11 16:22:28,382 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162228.csv
+2026-03-11 16:22:28,476 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:22:28,556 INFO baseline Baseline loaded from S3
+2026-03-11 16:22:28,558 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:22:28,720 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:22:28,796 INFO baseline Baseline saved to S3
+2026-03-11 16:22:28,796 INFO processor Baseline updated and saved to S3
+2026-03-11 16:22:28,840 INFO processor Synced log file to S3
+2026-03-11 16:22:28,876 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T162228.csv
+2026-03-11 16:23:23,739 INFO app Received SNS message type: Notification
+2026-03-11 16:23:23,740 INFO app Dispatching processing for: raw/sensors_20260311T162322.csv
+2026-03-11 16:23:23,741 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162322.csv
+2026-03-11 16:23:23,825 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:23:23,908 INFO baseline Baseline loaded from S3
+2026-03-11 16:23:23,909 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:23:24,071 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:23:24,139 INFO baseline Baseline saved to S3
+2026-03-11 16:23:24,139 INFO processor Baseline updated and saved to S3
+2026-03-11 16:23:24,201 INFO processor Synced log file to S3
+2026-03-11 16:23:24,265 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T162322.csv
+2026-03-11 16:24:18,471 INFO app Received SNS message type: Notification
+2026-03-11 16:24:18,472 INFO app Dispatching processing for: raw/sensors_20260311T162417.csv
+2026-03-11 16:24:18,473 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162417.csv
+2026-03-11 16:24:18,550 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:24:18,635 INFO baseline Baseline loaded from S3
+2026-03-11 16:24:18,637 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:24:18,797 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:24:18,859 INFO baseline Baseline saved to S3
+2026-03-11 16:24:18,859 INFO processor Baseline updated and saved to S3
+2026-03-11 16:24:18,888 INFO processor Synced log file to S3
+2026-03-11 16:24:18,914 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T162417.csv
+2026-03-11 16:25:13,379 INFO app Received SNS message type: Notification
+2026-03-11 16:25:13,380 INFO app Dispatching processing for: raw/sensors_20260311T162514.csv
+2026-03-11 16:25:13,381 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162514.csv
+2026-03-11 16:25:13,500 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:25:13,598 INFO baseline Baseline loaded from S3
+2026-03-11 16:25:13,599 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:25:13,760 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:25:13,840 INFO baseline Baseline saved to S3
+2026-03-11 16:25:13,840 INFO processor Baseline updated and saved to S3
+2026-03-11 16:25:13,904 INFO processor Synced log file to S3
+2026-03-11 16:25:13,941 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T162514.csv
+2026-03-11 16:26:07,991 INFO app Received SNS message type: Notification
+2026-03-11 16:26:07,991 INFO app Dispatching processing for: raw/sensors_20260311T162609.csv
+2026-03-11 16:26:07,992 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162609.csv
+2026-03-11 16:26:08,068 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:26:08,142 INFO baseline Baseline loaded from S3
+2026-03-11 16:26:08,143 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:26:08,304 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:26:08,449 INFO baseline Baseline saved to S3
+2026-03-11 16:26:08,449 INFO processor Baseline updated and saved to S3
+2026-03-11 16:26:08,479 INFO processor Synced log file to S3
+2026-03-11 16:26:08,506 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T162609.csv
+2026-03-11 16:27:03,341 INFO app Received SNS message type: Notification
+2026-03-11 16:27:03,341 INFO app Dispatching processing for: raw/sensors_20260311T162704.csv
+2026-03-11 16:27:03,342 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162704.csv
+2026-03-11 16:27:03,436 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:27:03,564 INFO baseline Baseline loaded from S3
+2026-03-11 16:27:03,566 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:27:03,748 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:27:03,810 INFO baseline Baseline saved to S3
+2026-03-11 16:27:03,810 INFO processor Baseline updated and saved to S3
+2026-03-11 16:27:03,907 INFO processor Synced log file to S3
+2026-03-11 16:27:03,933 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T162704.csv
+2026-03-11 16:27:58,111 INFO app Received SNS message type: Notification
+2026-03-11 16:27:58,111 INFO app Dispatching processing for: raw/sensors_20260311T162758.csv
+2026-03-11 16:27:58,112 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162758.csv
+2026-03-11 16:27:58,200 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:27:58,310 INFO baseline Baseline loaded from S3
+2026-03-11 16:27:58,312 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:27:58,471 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:27:58,531 INFO baseline Baseline saved to S3
+2026-03-11 16:27:58,532 INFO processor Baseline updated and saved to S3
+2026-03-11 16:27:58,560 INFO processor Synced log file to S3
+2026-03-11 16:27:58,589 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T162758.csv
+2026-03-11 16:28:52,734 INFO app Received SNS message type: Notification
+2026-03-11 16:28:52,734 INFO app Dispatching processing for: raw/sensors_20260311T162853.csv
+2026-03-11 16:28:52,735 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162853.csv
+2026-03-11 16:28:52,811 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:28:52,919 INFO baseline Baseline loaded from S3
+2026-03-11 16:28:52,921 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:28:53,081 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 16:28:53,161 INFO baseline Baseline saved to S3
+2026-03-11 16:28:53,161 INFO processor Baseline updated and saved to S3
+2026-03-11 16:28:53,205 INFO processor Synced log file to S3
+2026-03-11 16:28:53,251 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T162853.csv
+2026-03-11 16:29:47,591 INFO app Received SNS message type: Notification
+2026-03-11 16:29:47,591 INFO app Dispatching processing for: raw/sensors_20260311T162947.csv
+2026-03-11 16:29:47,592 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T162947.csv
+2026-03-11 16:29:47,680 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:29:47,849 INFO baseline Baseline loaded from S3
+2026-03-11 16:29:47,851 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:29:48,010 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:29:48,084 INFO baseline Baseline saved to S3
+2026-03-11 16:29:48,084 INFO processor Baseline updated and saved to S3
+2026-03-11 16:29:48,119 INFO processor Synced log file to S3
+2026-03-11 16:29:48,153 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T162947.csv
+2026-03-11 16:30:42,729 INFO app Received SNS message type: Notification
+2026-03-11 16:30:42,729 INFO app Dispatching processing for: raw/sensors_20260311T163041.csv
+2026-03-11 16:30:42,730 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163041.csv
+2026-03-11 16:30:42,820 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:30:42,949 INFO baseline Baseline loaded from S3
+2026-03-11 16:30:42,950 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:30:43,111 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:30:43,176 INFO baseline Baseline saved to S3
+2026-03-11 16:30:43,176 INFO processor Baseline updated and saved to S3
+2026-03-11 16:30:43,205 INFO processor Synced log file to S3
+2026-03-11 16:30:43,238 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T163041.csv
+2026-03-11 16:31:37,490 INFO app Received SNS message type: Notification
+2026-03-11 16:31:37,490 INFO app Dispatching processing for: raw/sensors_20260311T163136.csv
+2026-03-11 16:31:37,491 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163136.csv
+2026-03-11 16:31:37,568 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:31:37,642 INFO baseline Baseline loaded from S3
+2026-03-11 16:31:37,643 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:31:37,802 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:31:37,862 INFO baseline Baseline saved to S3
+2026-03-11 16:31:37,862 INFO processor Baseline updated and saved to S3
+2026-03-11 16:31:37,892 INFO processor Synced log file to S3
+2026-03-11 16:31:37,921 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T163136.csv
+2026-03-11 16:32:32,312 INFO app Received SNS message type: Notification
+2026-03-11 16:32:32,313 INFO app Dispatching processing for: raw/sensors_20260311T163233.csv
+2026-03-11 16:32:32,314 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163233.csv
+2026-03-11 16:32:32,386 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:32:32,462 INFO baseline Baseline loaded from S3
+2026-03-11 16:32:32,463 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:32:32,625 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:32:32,719 INFO baseline Baseline saved to S3
+2026-03-11 16:32:32,719 INFO processor Baseline updated and saved to S3
+2026-03-11 16:32:32,751 INFO processor Synced log file to S3
+2026-03-11 16:32:32,782 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T163233.csv
+2026-03-11 16:33:26,885 INFO app Received SNS message type: Notification
+2026-03-11 16:33:26,885 INFO app Dispatching processing for: raw/sensors_20260311T163327.csv
+2026-03-11 16:33:26,886 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163327.csv
+2026-03-11 16:33:26,966 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:33:27,042 INFO baseline Baseline loaded from S3
+2026-03-11 16:33:27,044 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:33:27,204 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:33:27,281 INFO baseline Baseline saved to S3
+2026-03-11 16:33:27,281 INFO processor Baseline updated and saved to S3
+2026-03-11 16:33:27,313 INFO processor Synced log file to S3
+2026-03-11 16:33:27,345 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T163327.csv
+2026-03-11 16:34:21,584 INFO app Received SNS message type: Notification
+2026-03-11 16:34:21,584 INFO app Dispatching processing for: raw/sensors_20260311T163422.csv
+2026-03-11 16:34:21,585 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163422.csv
+2026-03-11 16:34:21,663 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:34:21,753 INFO baseline Baseline loaded from S3
+2026-03-11 16:34:21,754 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:34:21,917 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:34:21,998 INFO baseline Baseline saved to S3
+2026-03-11 16:34:21,998 INFO processor Baseline updated and saved to S3
+2026-03-11 16:34:22,028 INFO processor Synced log file to S3
+2026-03-11 16:34:22,059 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T163422.csv
+2026-03-11 16:35:16,315 INFO app Received SNS message type: Notification
+2026-03-11 16:35:16,315 INFO app Dispatching processing for: raw/sensors_20260311T163516.csv
+2026-03-11 16:35:16,316 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163516.csv
+2026-03-11 16:35:16,389 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:35:16,477 INFO baseline Baseline loaded from S3
+2026-03-11 16:35:16,478 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:35:16,640 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:35:16,707 INFO baseline Baseline saved to S3
+2026-03-11 16:35:16,707 INFO processor Baseline updated and saved to S3
+2026-03-11 16:35:16,817 INFO processor Synced log file to S3
+2026-03-11 16:35:16,844 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T163516.csv
+2026-03-11 16:36:10,944 INFO app Received SNS message type: Notification
+2026-03-11 16:36:10,944 INFO app Dispatching processing for: raw/sensors_20260311T163611.csv
+2026-03-11 16:36:10,945 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163611.csv
+2026-03-11 16:36:11,021 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:36:11,091 INFO baseline Baseline loaded from S3
+2026-03-11 16:36:11,093 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:36:11,253 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:36:11,315 INFO baseline Baseline saved to S3
+2026-03-11 16:36:11,315 INFO processor Baseline updated and saved to S3
+2026-03-11 16:36:11,346 INFO processor Synced log file to S3
+2026-03-11 16:36:11,379 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T163611.csv
+2026-03-11 16:37:06,317 INFO app Received SNS message type: Notification
+2026-03-11 16:37:06,317 INFO app Dispatching processing for: raw/sensors_20260311T163705.csv
+2026-03-11 16:37:06,318 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163705.csv
+2026-03-11 16:37:06,393 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:37:06,466 INFO baseline Baseline loaded from S3
+2026-03-11 16:37:06,467 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:37:06,627 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:37:06,687 INFO baseline Baseline saved to S3
+2026-03-11 16:37:06,687 INFO processor Baseline updated and saved to S3
+2026-03-11 16:37:06,732 INFO processor Synced log file to S3
+2026-03-11 16:37:06,768 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T163705.csv
+2026-03-11 16:38:01,173 INFO app Received SNS message type: Notification
+2026-03-11 16:38:01,173 INFO app Dispatching processing for: raw/sensors_20260311T163800.csv
+2026-03-11 16:38:01,174 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163800.csv
+2026-03-11 16:38:01,333 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:38:01,527 INFO baseline Baseline loaded from S3
+2026-03-11 16:38:01,533 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:38:02,093 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:38:02,209 INFO baseline Baseline saved to S3
+2026-03-11 16:38:02,209 INFO processor Baseline updated and saved to S3
+2026-03-11 16:38:02,259 INFO processor Synced log file to S3
+2026-03-11 16:38:02,333 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T163800.csv
+2026-03-11 16:38:55,856 INFO app Received SNS message type: Notification
+2026-03-11 16:38:55,856 INFO app Dispatching processing for: raw/sensors_20260311T163854.csv
+2026-03-11 16:38:55,857 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163854.csv
+2026-03-11 16:38:55,932 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:38:56,017 INFO baseline Baseline loaded from S3
+2026-03-11 16:38:56,018 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:38:56,178 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:38:56,267 INFO baseline Baseline saved to S3
+2026-03-11 16:38:56,267 INFO processor Baseline updated and saved to S3
+2026-03-11 16:38:56,342 INFO processor Synced log file to S3
+2026-03-11 16:38:56,374 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T163854.csv
+2026-03-11 16:39:50,416 INFO app Received SNS message type: Notification
+2026-03-11 16:39:50,416 INFO app Dispatching processing for: raw/sensors_20260311T163952.csv
+2026-03-11 16:39:50,417 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T163952.csv
+2026-03-11 16:39:50,500 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:39:50,595 INFO baseline Baseline loaded from S3
+2026-03-11 16:39:50,597 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:39:50,758 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:39:50,844 INFO baseline Baseline saved to S3
+2026-03-11 16:39:50,845 INFO processor Baseline updated and saved to S3
+2026-03-11 16:39:50,878 INFO processor Synced log file to S3
+2026-03-11 16:39:50,908 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T163952.csv
+2026-03-11 16:40:45,244 INFO app Received SNS message type: Notification
+2026-03-11 16:40:45,245 INFO app Dispatching processing for: raw/sensors_20260311T164046.csv
+2026-03-11 16:40:45,246 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164046.csv
+2026-03-11 16:40:45,323 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:40:45,399 INFO baseline Baseline loaded from S3
+2026-03-11 16:40:45,400 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:40:45,559 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:40:45,621 INFO baseline Baseline saved to S3
+2026-03-11 16:40:45,621 INFO processor Baseline updated and saved to S3
+2026-03-11 16:40:45,649 INFO processor Synced log file to S3
+2026-03-11 16:40:45,678 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T164046.csv
+2026-03-11 16:41:40,439 INFO app Received SNS message type: Notification
+2026-03-11 16:41:40,439 INFO app Dispatching processing for: raw/sensors_20260311T164140.csv
+2026-03-11 16:41:40,441 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164140.csv
+2026-03-11 16:41:40,521 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:41:40,686 INFO baseline Baseline loaded from S3
+2026-03-11 16:41:40,687 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:41:40,851 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:41:40,953 INFO baseline Baseline saved to S3
+2026-03-11 16:41:40,953 INFO processor Baseline updated and saved to S3
+2026-03-11 16:41:40,987 INFO processor Synced log file to S3
+2026-03-11 16:41:41,021 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T164140.csv
+2026-03-11 16:42:35,172 INFO app Received SNS message type: Notification
+2026-03-11 16:42:35,173 INFO app Dispatching processing for: raw/sensors_20260311T164235.csv
+2026-03-11 16:42:35,174 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164235.csv
+2026-03-11 16:42:35,258 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:42:35,334 INFO baseline Baseline loaded from S3
+2026-03-11 16:42:35,335 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:42:35,496 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:42:35,563 INFO baseline Baseline saved to S3
+2026-03-11 16:42:35,563 INFO processor Baseline updated and saved to S3
+2026-03-11 16:42:35,607 INFO processor Synced log file to S3
+2026-03-11 16:42:35,643 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T164235.csv
+2026-03-11 16:43:29,954 INFO app Received SNS message type: Notification
+2026-03-11 16:43:29,955 INFO app Dispatching processing for: raw/sensors_20260311T164329.csv
+2026-03-11 16:43:29,956 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164329.csv
+2026-03-11 16:43:30,037 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:43:30,132 INFO baseline Baseline loaded from S3
+2026-03-11 16:43:30,133 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:43:30,296 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:43:30,355 INFO baseline Baseline saved to S3
+2026-03-11 16:43:30,355 INFO processor Baseline updated and saved to S3
+2026-03-11 16:43:30,392 INFO processor Synced log file to S3
+2026-03-11 16:43:30,418 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T164329.csv
+2026-03-11 16:44:24,583 INFO app Received SNS message type: Notification
+2026-03-11 16:44:24,583 INFO app Dispatching processing for: raw/sensors_20260311T164424.csv
+2026-03-11 16:44:24,584 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164424.csv
+2026-03-11 16:44:24,655 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:44:24,813 INFO baseline Baseline loaded from S3
+2026-03-11 16:44:24,814 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:44:24,976 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:44:25,039 INFO baseline Baseline saved to S3
+2026-03-11 16:44:25,039 INFO processor Baseline updated and saved to S3
+2026-03-11 16:44:25,070 INFO processor Synced log file to S3
+2026-03-11 16:44:25,095 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T164424.csv
+2026-03-11 16:45:19,317 INFO app Received SNS message type: Notification
+2026-03-11 16:45:19,317 INFO app Dispatching processing for: raw/sensors_20260311T164518.csv
+2026-03-11 16:45:19,318 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164518.csv
+2026-03-11 16:45:19,405 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:45:19,497 INFO baseline Baseline loaded from S3
+2026-03-11 16:45:19,498 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:45:19,659 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:45:19,725 INFO baseline Baseline saved to S3
+2026-03-11 16:45:19,725 INFO processor Baseline updated and saved to S3
+2026-03-11 16:45:19,768 INFO processor Synced log file to S3
+2026-03-11 16:45:19,800 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T164518.csv
+2026-03-11 16:46:14,051 INFO app Received SNS message type: Notification
+2026-03-11 16:46:14,051 INFO app Dispatching processing for: raw/sensors_20260311T164616.csv
+2026-03-11 16:46:14,052 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164616.csv
+2026-03-11 16:46:14,126 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:46:14,198 INFO baseline Baseline loaded from S3
+2026-03-11 16:46:14,200 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:46:14,359 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:46:14,418 INFO baseline Baseline saved to S3
+2026-03-11 16:46:14,418 INFO processor Baseline updated and saved to S3
+2026-03-11 16:46:14,450 INFO processor Synced log file to S3
+2026-03-11 16:46:14,481 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T164616.csv
+2026-03-11 16:47:09,486 INFO app Received SNS message type: Notification
+2026-03-11 16:47:09,486 INFO app Dispatching processing for: raw/sensors_20260311T164710.csv
+2026-03-11 16:47:09,487 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164710.csv
+2026-03-11 16:47:09,585 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:47:09,663 INFO baseline Baseline loaded from S3
+2026-03-11 16:47:09,664 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:47:09,824 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 16:47:09,892 INFO baseline Baseline saved to S3
+2026-03-11 16:47:09,892 INFO processor Baseline updated and saved to S3
+2026-03-11 16:47:09,924 INFO processor Synced log file to S3
+2026-03-11 16:47:09,956 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T164710.csv
+2026-03-11 16:48:03,947 INFO app Received SNS message type: Notification
+2026-03-11 16:48:03,947 INFO app Dispatching processing for: raw/sensors_20260311T164804.csv
+2026-03-11 16:48:03,948 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164804.csv
+2026-03-11 16:48:04,060 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:48:04,133 INFO baseline Baseline loaded from S3
+2026-03-11 16:48:04,135 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:48:04,298 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:48:04,361 INFO baseline Baseline saved to S3
+2026-03-11 16:48:04,361 INFO processor Baseline updated and saved to S3
+2026-03-11 16:48:04,392 INFO processor Synced log file to S3
+2026-03-11 16:48:04,420 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T164804.csv
+2026-03-11 16:48:58,777 INFO app Received SNS message type: Notification
+2026-03-11 16:48:58,777 INFO app Dispatching processing for: raw/sensors_20260311T164859.csv
+2026-03-11 16:48:58,778 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164859.csv
+2026-03-11 16:48:58,852 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:48:58,929 INFO baseline Baseline loaded from S3
+2026-03-11 16:48:58,930 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:48:59,092 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:48:59,177 INFO baseline Baseline saved to S3
+2026-03-11 16:48:59,177 INFO processor Baseline updated and saved to S3
+2026-03-11 16:48:59,210 INFO processor Synced log file to S3
+2026-03-11 16:48:59,242 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T164859.csv
+2026-03-11 16:49:53,379 INFO app Received SNS message type: Notification
+2026-03-11 16:49:53,379 INFO app Dispatching processing for: raw/sensors_20260311T164953.csv
+2026-03-11 16:49:53,380 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T164953.csv
+2026-03-11 16:49:53,471 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:49:53,547 INFO baseline Baseline loaded from S3
+2026-03-11 16:49:53,549 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:49:53,709 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:49:53,778 INFO baseline Baseline saved to S3
+2026-03-11 16:49:53,779 INFO processor Baseline updated and saved to S3
+2026-03-11 16:49:53,814 INFO processor Synced log file to S3
+2026-03-11 16:49:53,867 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T164953.csv
+2026-03-11 16:50:48,145 INFO app Received SNS message type: Notification
+2026-03-11 16:50:48,145 INFO app Dispatching processing for: raw/sensors_20260311T165048.csv
+2026-03-11 16:50:48,146 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165048.csv
+2026-03-11 16:50:48,232 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:50:48,317 INFO baseline Baseline loaded from S3
+2026-03-11 16:50:48,318 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:50:48,481 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:50:48,568 INFO baseline Baseline saved to S3
+2026-03-11 16:50:48,568 INFO processor Baseline updated and saved to S3
+2026-03-11 16:50:48,600 INFO processor Synced log file to S3
+2026-03-11 16:50:48,631 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T165048.csv
+2026-03-11 16:51:42,658 INFO app Received SNS message type: Notification
+2026-03-11 16:51:42,658 INFO app Dispatching processing for: raw/sensors_20260311T165142.csv
+2026-03-11 16:51:42,659 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165142.csv
+2026-03-11 16:51:42,732 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:51:42,860 INFO baseline Baseline loaded from S3
+2026-03-11 16:51:42,861 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:51:43,021 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:51:43,119 INFO baseline Baseline saved to S3
+2026-03-11 16:51:43,119 INFO processor Baseline updated and saved to S3
+2026-03-11 16:51:43,149 INFO processor Synced log file to S3
+2026-03-11 16:51:43,178 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T165142.csv
+2026-03-11 16:52:38,335 INFO app Received SNS message type: Notification
+2026-03-11 16:52:38,335 INFO app Dispatching processing for: raw/sensors_20260311T165236.csv
+2026-03-11 16:52:38,336 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165236.csv
+2026-03-11 16:52:38,408 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:52:38,515 INFO baseline Baseline loaded from S3
+2026-03-11 16:52:38,517 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:52:38,678 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:52:38,746 INFO baseline Baseline saved to S3
+2026-03-11 16:52:38,746 INFO processor Baseline updated and saved to S3
+2026-03-11 16:52:38,798 INFO processor Synced log file to S3
+2026-03-11 16:52:38,825 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T165236.csv
+2026-03-11 16:53:32,983 INFO app Received SNS message type: Notification
+2026-03-11 16:53:32,983 INFO app Dispatching processing for: raw/sensors_20260311T165334.csv
+2026-03-11 16:53:32,984 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165334.csv
+2026-03-11 16:53:33,069 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:53:33,157 INFO baseline Baseline loaded from S3
+2026-03-11 16:53:33,158 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:53:33,318 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:53:33,378 INFO baseline Baseline saved to S3
+2026-03-11 16:53:33,378 INFO processor Baseline updated and saved to S3
+2026-03-11 16:53:33,413 INFO processor Synced log file to S3
+2026-03-11 16:53:33,441 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T165334.csv
+2026-03-11 16:54:27,615 INFO app Received SNS message type: Notification
+2026-03-11 16:54:27,615 INFO app Dispatching processing for: raw/sensors_20260311T165428.csv
+2026-03-11 16:54:27,616 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165428.csv
+2026-03-11 16:54:27,701 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:54:27,780 INFO baseline Baseline loaded from S3
+2026-03-11 16:54:27,782 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:54:27,942 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:54:28,009 INFO baseline Baseline saved to S3
+2026-03-11 16:54:28,010 INFO processor Baseline updated and saved to S3
+2026-03-11 16:54:28,043 INFO processor Synced log file to S3
+2026-03-11 16:54:28,078 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T165428.csv
+2026-03-11 16:55:22,380 INFO app Received SNS message type: Notification
+2026-03-11 16:55:22,380 INFO app Dispatching processing for: raw/sensors_20260311T165523.csv
+2026-03-11 16:55:22,381 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165523.csv
+2026-03-11 16:55:22,457 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:55:22,546 INFO baseline Baseline loaded from S3
+2026-03-11 16:55:22,547 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:55:22,707 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:55:22,768 INFO baseline Baseline saved to S3
+2026-03-11 16:55:22,768 INFO processor Baseline updated and saved to S3
+2026-03-11 16:55:22,822 INFO processor Synced log file to S3
+2026-03-11 16:55:22,852 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T165523.csv
+2026-03-11 16:56:17,114 INFO app Received SNS message type: Notification
+2026-03-11 16:56:17,114 INFO app Dispatching processing for: raw/sensors_20260311T165617.csv
+2026-03-11 16:56:17,115 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165617.csv
+2026-03-11 16:56:17,193 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:56:17,273 INFO baseline Baseline loaded from S3
+2026-03-11 16:56:17,274 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:56:17,440 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:56:17,500 INFO baseline Baseline saved to S3
+2026-03-11 16:56:17,500 INFO processor Baseline updated and saved to S3
+2026-03-11 16:56:17,533 INFO processor Synced log file to S3
+2026-03-11 16:56:17,560 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T165617.csv
+2026-03-11 16:57:11,997 INFO app Received SNS message type: Notification
+2026-03-11 16:57:11,997 INFO app Dispatching processing for: raw/sensors_20260311T165711.csv
+2026-03-11 16:57:11,998 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165711.csv
+2026-03-11 16:57:12,072 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:57:12,147 INFO baseline Baseline loaded from S3
+2026-03-11 16:57:12,149 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:57:12,309 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:57:12,375 INFO baseline Baseline saved to S3
+2026-03-11 16:57:12,375 INFO processor Baseline updated and saved to S3
+2026-03-11 16:57:12,405 INFO processor Synced log file to S3
+2026-03-11 16:57:12,434 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T165711.csv
+2026-03-11 16:58:06,628 INFO app Received SNS message type: Notification
+2026-03-11 16:58:06,628 INFO app Dispatching processing for: raw/sensors_20260311T165806.csv
+2026-03-11 16:58:06,629 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165806.csv
+2026-03-11 16:58:06,709 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:58:06,792 INFO baseline Baseline loaded from S3
+2026-03-11 16:58:06,793 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:58:06,953 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 16:58:07,036 INFO baseline Baseline saved to S3
+2026-03-11 16:58:07,036 INFO processor Baseline updated and saved to S3
+2026-03-11 16:58:07,070 INFO processor Synced log file to S3
+2026-03-11 16:58:07,128 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T165806.csv
+2026-03-11 16:59:01,210 INFO app Received SNS message type: Notification
+2026-03-11 16:59:01,211 INFO app Dispatching processing for: raw/sensors_20260311T165900.csv
+2026-03-11 16:59:01,212 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165900.csv
+2026-03-11 16:59:01,299 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:59:01,474 INFO baseline Baseline loaded from S3
+2026-03-11 16:59:01,475 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:59:01,716 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:59:01,783 INFO baseline Baseline saved to S3
+2026-03-11 16:59:01,783 INFO processor Baseline updated and saved to S3
+2026-03-11 16:59:01,816 INFO processor Synced log file to S3
+2026-03-11 16:59:01,845 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T165900.csv
+2026-03-11 16:59:56,559 INFO app Received SNS message type: Notification
+2026-03-11 16:59:56,559 INFO app Dispatching processing for: raw/sensors_20260311T165955.csv
+2026-03-11 16:59:56,561 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T165955.csv
+2026-03-11 16:59:56,639 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 16:59:56,754 INFO baseline Baseline loaded from S3
+2026-03-11 16:59:56,755 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 16:59:56,916 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 16:59:56,975 INFO baseline Baseline saved to S3
+2026-03-11 16:59:56,975 INFO processor Baseline updated and saved to S3
+2026-03-11 16:59:57,003 INFO processor Synced log file to S3
+2026-03-11 16:59:57,031 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T165955.csv
+2026-03-11 17:00:51,317 INFO app Received SNS message type: Notification
+2026-03-11 17:00:51,317 INFO app Dispatching processing for: raw/sensors_20260311T170052.csv
+2026-03-11 17:00:51,318 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170052.csv
+2026-03-11 17:00:51,389 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:00:51,493 INFO baseline Baseline loaded from S3
+2026-03-11 17:00:51,494 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:00:51,657 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:00:51,725 INFO baseline Baseline saved to S3
+2026-03-11 17:00:51,725 INFO processor Baseline updated and saved to S3
+2026-03-11 17:00:51,754 INFO processor Synced log file to S3
+2026-03-11 17:00:51,782 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T170052.csv
+2026-03-11 17:01:45,979 INFO app Received SNS message type: Notification
+2026-03-11 17:01:45,979 INFO app Dispatching processing for: raw/sensors_20260311T170147.csv
+2026-03-11 17:01:45,980 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170147.csv
+2026-03-11 17:01:46,061 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:01:46,257 INFO baseline Baseline loaded from S3
+2026-03-11 17:01:46,259 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:01:46,420 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 17:01:46,484 INFO baseline Baseline saved to S3
+2026-03-11 17:01:46,485 INFO processor Baseline updated and saved to S3
+2026-03-11 17:01:46,518 INFO processor Synced log file to S3
+2026-03-11 17:01:46,548 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T170147.csv
+2026-03-11 17:02:40,598 INFO app Received SNS message type: Notification
+2026-03-11 17:02:40,598 INFO app Dispatching processing for: raw/sensors_20260311T170241.csv
+2026-03-11 17:02:40,599 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170241.csv
+2026-03-11 17:02:40,672 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:02:40,765 INFO baseline Baseline loaded from S3
+2026-03-11 17:02:40,767 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:02:40,929 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 17:02:40,996 INFO baseline Baseline saved to S3
+2026-03-11 17:02:40,996 INFO processor Baseline updated and saved to S3
+2026-03-11 17:02:41,029 INFO processor Synced log file to S3
+2026-03-11 17:02:41,057 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T170241.csv
+2026-03-11 17:03:35,960 INFO app Received SNS message type: Notification
+2026-03-11 17:03:35,961 INFO app Dispatching processing for: raw/sensors_20260311T170335.csv
+2026-03-11 17:03:35,961 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170335.csv
+2026-03-11 17:03:36,037 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:03:36,112 INFO baseline Baseline loaded from S3
+2026-03-11 17:03:36,113 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:03:36,277 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:03:36,345 INFO baseline Baseline saved to S3
+2026-03-11 17:03:36,345 INFO processor Baseline updated and saved to S3
+2026-03-11 17:03:36,378 INFO processor Synced log file to S3
+2026-03-11 17:03:36,408 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T170335.csv
+2026-03-11 17:04:30,778 INFO app Received SNS message type: Notification
+2026-03-11 17:04:30,779 INFO app Dispatching processing for: raw/sensors_20260311T170430.csv
+2026-03-11 17:04:30,780 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170430.csv
+2026-03-11 17:04:30,853 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:04:30,924 INFO baseline Baseline loaded from S3
+2026-03-11 17:04:30,925 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:04:31,086 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:04:31,149 INFO baseline Baseline saved to S3
+2026-03-11 17:04:31,149 INFO processor Baseline updated and saved to S3
+2026-03-11 17:04:31,183 INFO processor Synced log file to S3
+2026-03-11 17:04:31,212 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T170430.csv
+2026-03-11 17:05:25,446 INFO app Received SNS message type: Notification
+2026-03-11 17:05:25,446 INFO app Dispatching processing for: raw/sensors_20260311T170524.csv
+2026-03-11 17:05:25,447 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170524.csv
+2026-03-11 17:05:25,522 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:05:25,654 INFO baseline Baseline loaded from S3
+2026-03-11 17:05:25,655 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:05:25,818 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:05:25,896 INFO baseline Baseline saved to S3
+2026-03-11 17:05:25,896 INFO processor Baseline updated and saved to S3
+2026-03-11 17:05:25,933 INFO processor Synced log file to S3
+2026-03-11 17:05:25,967 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T170524.csv
+2026-03-11 17:06:20,752 INFO app Received SNS message type: Notification
+2026-03-11 17:06:20,753 INFO app Dispatching processing for: raw/sensors_20260311T170619.csv
+2026-03-11 17:06:20,754 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170619.csv
+2026-03-11 17:06:20,828 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:06:20,910 INFO baseline Baseline loaded from S3
+2026-03-11 17:06:20,911 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:06:21,072 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:06:21,182 INFO baseline Baseline saved to S3
+2026-03-11 17:06:21,182 INFO processor Baseline updated and saved to S3
+2026-03-11 17:06:21,212 INFO processor Synced log file to S3
+2026-03-11 17:06:21,242 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T170619.csv
+2026-03-11 17:07:15,711 INFO app Received SNS message type: Notification
+2026-03-11 17:07:15,711 INFO app Dispatching processing for: raw/sensors_20260311T170717.csv
+2026-03-11 17:07:15,712 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170717.csv
+2026-03-11 17:07:15,786 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:07:15,860 INFO baseline Baseline loaded from S3
+2026-03-11 17:07:15,862 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:07:16,024 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:07:16,083 INFO baseline Baseline saved to S3
+2026-03-11 17:07:16,083 INFO processor Baseline updated and saved to S3
+2026-03-11 17:07:16,114 INFO processor Synced log file to S3
+2026-03-11 17:07:16,143 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T170717.csv
+2026-03-11 17:08:10,092 INFO app Received SNS message type: Notification
+2026-03-11 17:08:10,093 INFO app Dispatching processing for: raw/sensors_20260311T170811.csv
+2026-03-11 17:08:10,094 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170811.csv
+2026-03-11 17:08:10,168 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:08:10,240 INFO baseline Baseline loaded from S3
+2026-03-11 17:08:10,242 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:08:10,403 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:08:10,486 INFO baseline Baseline saved to S3
+2026-03-11 17:08:10,487 INFO processor Baseline updated and saved to S3
+2026-03-11 17:08:10,551 INFO processor Synced log file to S3
+2026-03-11 17:08:10,586 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T170811.csv
+2026-03-11 17:09:05,587 INFO app Received SNS message type: Notification
+2026-03-11 17:09:05,587 INFO app Dispatching processing for: raw/sensors_20260311T170905.csv
+2026-03-11 17:09:05,588 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T170905.csv
+2026-03-11 17:09:05,665 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:09:05,744 INFO baseline Baseline loaded from S3
+2026-03-11 17:09:05,745 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:09:05,905 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:09:05,980 INFO baseline Baseline saved to S3
+2026-03-11 17:09:05,981 INFO processor Baseline updated and saved to S3
+2026-03-11 17:09:06,013 INFO processor Synced log file to S3
+2026-03-11 17:09:06,046 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T170905.csv
+2026-03-11 17:10:00,092 INFO app Received SNS message type: Notification
+2026-03-11 17:10:00,092 INFO app Dispatching processing for: raw/sensors_20260311T171000.csv
+2026-03-11 17:10:00,096 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171000.csv
+2026-03-11 17:10:00,257 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:10:00,352 INFO baseline Baseline loaded from S3
+2026-03-11 17:10:00,353 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:10:00,517 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:10:00,592 INFO baseline Baseline saved to S3
+2026-03-11 17:10:00,593 INFO processor Baseline updated and saved to S3
+2026-03-11 17:10:00,623 INFO processor Synced log file to S3
+2026-03-11 17:10:00,690 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T171000.csv
+2026-03-11 17:10:54,851 INFO app Received SNS message type: Notification
+2026-03-11 17:10:54,851 INFO app Dispatching processing for: raw/sensors_20260311T171054.csv
+2026-03-11 17:10:54,852 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171054.csv
+2026-03-11 17:10:54,931 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:10:55,022 INFO baseline Baseline loaded from S3
+2026-03-11 17:10:55,023 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:10:55,192 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:10:55,255 INFO baseline Baseline saved to S3
+2026-03-11 17:10:55,255 INFO processor Baseline updated and saved to S3
+2026-03-11 17:10:55,328 INFO processor Synced log file to S3
+2026-03-11 17:10:55,361 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T171054.csv
+2026-03-11 17:11:49,469 INFO app Received SNS message type: Notification
+2026-03-11 17:11:49,469 INFO app Dispatching processing for: raw/sensors_20260311T171149.csv
+2026-03-11 17:11:49,470 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171149.csv
+2026-03-11 17:11:49,547 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:11:49,654 INFO baseline Baseline loaded from S3
+2026-03-11 17:11:49,655 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:11:49,815 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 17:11:49,891 INFO baseline Baseline saved to S3
+2026-03-11 17:11:49,891 INFO processor Baseline updated and saved to S3
+2026-03-11 17:11:49,943 INFO processor Synced log file to S3
+2026-03-11 17:11:49,982 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T171149.csv
+2026-03-11 17:12:44,120 INFO app Received SNS message type: Notification
+2026-03-11 17:12:44,121 INFO app Dispatching processing for: raw/sensors_20260311T171243.csv
+2026-03-11 17:12:44,122 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171243.csv
+2026-03-11 17:12:44,205 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:12:44,279 INFO baseline Baseline loaded from S3
+2026-03-11 17:12:44,280 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:12:44,440 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:12:44,543 INFO baseline Baseline saved to S3
+2026-03-11 17:12:44,543 INFO processor Baseline updated and saved to S3
+2026-03-11 17:12:44,582 INFO processor Synced log file to S3
+2026-03-11 17:12:44,612 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T171243.csv
+2026-03-11 17:13:39,519 INFO app Received SNS message type: Notification
+2026-03-11 17:13:39,519 INFO app Dispatching processing for: raw/sensors_20260311T171340.csv
+2026-03-11 17:13:39,520 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171340.csv
+2026-03-11 17:13:39,599 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:13:39,695 INFO baseline Baseline loaded from S3
+2026-03-11 17:13:39,696 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:13:39,857 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:13:39,934 INFO baseline Baseline saved to S3
+2026-03-11 17:13:39,935 INFO processor Baseline updated and saved to S3
+2026-03-11 17:13:39,967 INFO processor Synced log file to S3
+2026-03-11 17:13:39,997 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T171340.csv
+2026-03-11 17:14:34,046 INFO app Received SNS message type: Notification
+2026-03-11 17:14:34,046 INFO app Dispatching processing for: raw/sensors_20260311T171435.csv
+2026-03-11 17:14:34,047 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171435.csv
+2026-03-11 17:14:34,119 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:14:34,191 INFO baseline Baseline loaded from S3
+2026-03-11 17:14:34,192 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:14:34,352 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:14:34,451 INFO baseline Baseline saved to S3
+2026-03-11 17:14:34,452 INFO processor Baseline updated and saved to S3
+2026-03-11 17:14:34,479 INFO processor Synced log file to S3
+2026-03-11 17:14:34,508 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T171435.csv
+2026-03-11 17:15:28,601 INFO app Received SNS message type: Notification
+2026-03-11 17:15:28,602 INFO app Dispatching processing for: raw/sensors_20260311T171529.csv
+2026-03-11 17:15:28,603 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171529.csv
+2026-03-11 17:15:28,679 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:15:28,760 INFO baseline Baseline loaded from S3
+2026-03-11 17:15:28,761 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:15:28,922 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:15:28,988 INFO baseline Baseline saved to S3
+2026-03-11 17:15:28,988 INFO processor Baseline updated and saved to S3
+2026-03-11 17:15:29,021 INFO processor Synced log file to S3
+2026-03-11 17:15:29,072 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T171529.csv
+2026-03-11 17:16:23,352 INFO app Received SNS message type: Notification
+2026-03-11 17:16:23,352 INFO app Dispatching processing for: raw/sensors_20260311T171624.csv
+2026-03-11 17:16:23,353 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171624.csv
+2026-03-11 17:16:23,435 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:16:23,516 INFO baseline Baseline loaded from S3
+2026-03-11 17:16:23,517 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:16:23,676 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:16:23,752 INFO baseline Baseline saved to S3
+2026-03-11 17:16:23,752 INFO processor Baseline updated and saved to S3
+2026-03-11 17:16:23,789 INFO processor Synced log file to S3
+2026-03-11 17:16:23,831 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T171624.csv
+2026-03-11 17:17:18,895 INFO app Received SNS message type: Notification
+2026-03-11 17:17:18,895 INFO app Dispatching processing for: raw/sensors_20260311T171718.csv
+2026-03-11 17:17:18,896 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171718.csv
+2026-03-11 17:17:18,975 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:17:19,083 INFO baseline Baseline loaded from S3
+2026-03-11 17:17:19,085 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:17:19,246 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:17:19,328 INFO baseline Baseline saved to S3
+2026-03-11 17:17:19,329 INFO processor Baseline updated and saved to S3
+2026-03-11 17:17:19,374 INFO processor Synced log file to S3
+2026-03-11 17:17:19,420 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T171718.csv
+2026-03-11 17:18:13,417 INFO app Received SNS message type: Notification
+2026-03-11 17:18:13,417 INFO app Dispatching processing for: raw/sensors_20260311T171813.csv
+2026-03-11 17:18:13,418 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171813.csv
+2026-03-11 17:18:13,493 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:18:13,580 INFO baseline Baseline loaded from S3
+2026-03-11 17:18:13,581 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:18:13,742 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:18:13,809 INFO baseline Baseline saved to S3
+2026-03-11 17:18:13,809 INFO processor Baseline updated and saved to S3
+2026-03-11 17:18:13,873 INFO processor Synced log file to S3
+2026-03-11 17:18:13,903 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T171813.csv
+2026-03-11 17:19:08,059 INFO app Received SNS message type: Notification
+2026-03-11 17:19:08,059 INFO app Dispatching processing for: raw/sensors_20260311T171907.csv
+2026-03-11 17:19:08,060 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T171907.csv
+2026-03-11 17:19:08,136 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:19:08,207 INFO baseline Baseline loaded from S3
+2026-03-11 17:19:08,209 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:19:08,369 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:19:08,436 INFO baseline Baseline saved to S3
+2026-03-11 17:19:08,436 INFO processor Baseline updated and saved to S3
+2026-03-11 17:19:08,478 INFO processor Synced log file to S3
+2026-03-11 17:19:08,511 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T171907.csv
+2026-03-11 17:20:02,652 INFO app Received SNS message type: Notification
+2026-03-11 17:20:02,652 INFO app Dispatching processing for: raw/sensors_20260311T172002.csv
+2026-03-11 17:20:02,661 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172002.csv
+2026-03-11 17:20:02,904 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:20:02,999 INFO baseline Baseline loaded from S3
+2026-03-11 17:20:03,001 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:20:03,257 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:20:03,339 INFO baseline Baseline saved to S3
+2026-03-11 17:20:03,339 INFO processor Baseline updated and saved to S3
+2026-03-11 17:20:03,378 INFO processor Synced log file to S3
+2026-03-11 17:20:03,411 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T172002.csv
+2026-03-11 17:20:58,019 INFO app Received SNS message type: Notification
+2026-03-11 17:20:58,020 INFO app Dispatching processing for: raw/sensors_20260311T172059.csv
+2026-03-11 17:20:58,021 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172059.csv
+2026-03-11 17:20:58,094 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:20:58,175 INFO baseline Baseline loaded from S3
+2026-03-11 17:20:58,177 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:20:58,338 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:20:58,406 INFO baseline Baseline saved to S3
+2026-03-11 17:20:58,406 INFO processor Baseline updated and saved to S3
+2026-03-11 17:20:58,499 INFO processor Synced log file to S3
+2026-03-11 17:20:58,536 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T172059.csv
+2026-03-11 17:21:52,570 INFO app Received SNS message type: Notification
+2026-03-11 17:21:52,570 INFO app Dispatching processing for: raw/sensors_20260311T172153.csv
+2026-03-11 17:21:52,571 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172153.csv
+2026-03-11 17:21:52,648 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:21:52,742 INFO baseline Baseline loaded from S3
+2026-03-11 17:21:52,743 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:21:52,904 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:21:52,992 INFO baseline Baseline saved to S3
+2026-03-11 17:21:52,992 INFO processor Baseline updated and saved to S3
+2026-03-11 17:21:53,056 INFO processor Synced log file to S3
+2026-03-11 17:21:53,083 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T172153.csv
+2026-03-11 17:22:47,369 INFO app Received SNS message type: Notification
+2026-03-11 17:22:47,369 INFO app Dispatching processing for: raw/sensors_20260311T172248.csv
+2026-03-11 17:22:47,370 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172248.csv
+2026-03-11 17:22:47,487 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:22:47,560 INFO baseline Baseline loaded from S3
+2026-03-11 17:22:47,561 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:22:47,724 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:22:47,829 INFO baseline Baseline saved to S3
+2026-03-11 17:22:47,830 INFO processor Baseline updated and saved to S3
+2026-03-11 17:22:47,902 INFO processor Synced log file to S3
+2026-03-11 17:22:47,952 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T172248.csv
+2026-03-11 17:23:42,174 INFO app Received SNS message type: Notification
+2026-03-11 17:23:42,174 INFO app Dispatching processing for: raw/sensors_20260311T172342.csv
+2026-03-11 17:23:42,175 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172342.csv
+2026-03-11 17:23:42,268 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:23:42,339 INFO baseline Baseline loaded from S3
+2026-03-11 17:23:42,341 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:23:42,501 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:23:42,568 INFO baseline Baseline saved to S3
+2026-03-11 17:23:42,568 INFO processor Baseline updated and saved to S3
+2026-03-11 17:23:42,613 INFO processor Synced log file to S3
+2026-03-11 17:23:42,645 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T172342.csv
+2026-03-11 17:24:36,758 INFO app Received SNS message type: Notification
+2026-03-11 17:24:36,759 INFO app Dispatching processing for: raw/sensors_20260311T172437.csv
+2026-03-11 17:24:36,760 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172437.csv
+2026-03-11 17:24:36,835 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:24:36,925 INFO baseline Baseline loaded from S3
+2026-03-11 17:24:36,926 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:24:37,087 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:24:37,150 INFO baseline Baseline saved to S3
+2026-03-11 17:24:37,150 INFO processor Baseline updated and saved to S3
+2026-03-11 17:24:37,201 INFO processor Synced log file to S3
+2026-03-11 17:24:37,243 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T172437.csv
+2026-03-11 17:25:31,453 INFO app Received SNS message type: Notification
+2026-03-11 17:25:31,453 INFO app Dispatching processing for: raw/sensors_20260311T172531.csv
+2026-03-11 17:25:31,454 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172531.csv
+2026-03-11 17:25:31,593 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:25:31,696 INFO baseline Baseline loaded from S3
+2026-03-11 17:25:31,698 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:25:31,864 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:25:31,934 INFO baseline Baseline saved to S3
+2026-03-11 17:25:31,934 INFO processor Baseline updated and saved to S3
+2026-03-11 17:25:31,976 INFO processor Synced log file to S3
+2026-03-11 17:25:32,014 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T172531.csv
+2026-03-11 17:26:26,891 INFO app Received SNS message type: Notification
+2026-03-11 17:26:26,891 INFO app Dispatching processing for: raw/sensors_20260311T172625.csv
+2026-03-11 17:26:26,892 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172625.csv
+2026-03-11 17:26:26,978 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:26:27,128 INFO baseline Baseline loaded from S3
+2026-03-11 17:26:27,129 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:26:27,290 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:26:27,365 INFO baseline Baseline saved to S3
+2026-03-11 17:26:27,365 INFO processor Baseline updated and saved to S3
+2026-03-11 17:26:27,427 INFO processor Synced log file to S3
+2026-03-11 17:26:27,458 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T172625.csv
+2026-03-11 17:27:21,486 INFO app Received SNS message type: Notification
+2026-03-11 17:27:21,486 INFO app Dispatching processing for: raw/sensors_20260311T172720.csv
+2026-03-11 17:27:21,487 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172720.csv
+2026-03-11 17:27:21,564 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:27:21,643 INFO baseline Baseline loaded from S3
+2026-03-11 17:27:21,645 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:27:21,806 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:27:21,873 INFO baseline Baseline saved to S3
+2026-03-11 17:27:21,874 INFO processor Baseline updated and saved to S3
+2026-03-11 17:27:21,975 INFO processor Synced log file to S3
+2026-03-11 17:27:22,007 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T172720.csv
+2026-03-11 17:28:16,125 INFO app Received SNS message type: Notification
+2026-03-11 17:28:16,125 INFO app Dispatching processing for: raw/sensors_20260311T172817.csv
+2026-03-11 17:28:16,126 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172817.csv
+2026-03-11 17:28:16,200 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:28:16,279 INFO baseline Baseline loaded from S3
+2026-03-11 17:28:16,281 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:28:16,442 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:28:16,501 INFO baseline Baseline saved to S3
+2026-03-11 17:28:16,501 INFO processor Baseline updated and saved to S3
+2026-03-11 17:28:16,532 INFO processor Synced log file to S3
+2026-03-11 17:28:16,562 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T172817.csv
+2026-03-11 17:29:10,844 INFO app Received SNS message type: Notification
+2026-03-11 17:29:10,844 INFO app Dispatching processing for: raw/sensors_20260311T172911.csv
+2026-03-11 17:29:10,846 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T172911.csv
+2026-03-11 17:29:10,925 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:29:11,003 INFO baseline Baseline loaded from S3
+2026-03-11 17:29:11,004 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:29:11,175 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:29:11,247 INFO baseline Baseline saved to S3
+2026-03-11 17:29:11,247 INFO processor Baseline updated and saved to S3
+2026-03-11 17:29:11,292 INFO processor Synced log file to S3
+2026-03-11 17:29:11,322 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T172911.csv
+2026-03-11 17:30:05,395 INFO app Received SNS message type: Notification
+2026-03-11 17:30:05,395 INFO app Dispatching processing for: raw/sensors_20260311T173006.csv
+2026-03-11 17:30:05,396 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173006.csv
+2026-03-11 17:30:05,483 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:30:05,591 INFO baseline Baseline loaded from S3
+2026-03-11 17:30:05,592 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:30:05,784 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:30:05,851 INFO baseline Baseline saved to S3
+2026-03-11 17:30:05,851 INFO processor Baseline updated and saved to S3
+2026-03-11 17:30:05,943 INFO processor Synced log file to S3
+2026-03-11 17:30:05,974 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T173006.csv
+2026-03-11 17:31:00,633 INFO app Received SNS message type: Notification
+2026-03-11 17:31:00,633 INFO app Dispatching processing for: raw/sensors_20260311T173100.csv
+2026-03-11 17:31:00,634 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173100.csv
+2026-03-11 17:31:00,712 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:31:00,819 INFO baseline Baseline loaded from S3
+2026-03-11 17:31:00,821 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:31:00,981 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:31:01,056 INFO baseline Baseline saved to S3
+2026-03-11 17:31:01,056 INFO processor Baseline updated and saved to S3
+2026-03-11 17:31:01,210 INFO processor Synced log file to S3
+2026-03-11 17:31:01,240 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T173100.csv
+2026-03-11 17:31:55,449 INFO app Received SNS message type: Notification
+2026-03-11 17:31:55,449 INFO app Dispatching processing for: raw/sensors_20260311T173155.csv
+2026-03-11 17:31:55,450 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173155.csv
+2026-03-11 17:31:55,534 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:31:55,636 INFO baseline Baseline loaded from S3
+2026-03-11 17:31:55,638 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:31:55,796 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:31:55,868 INFO baseline Baseline saved to S3
+2026-03-11 17:31:55,868 INFO processor Baseline updated and saved to S3
+2026-03-11 17:31:55,921 INFO processor Synced log file to S3
+2026-03-11 17:31:55,959 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T173155.csv
+2026-03-11 17:32:50,280 INFO app Received SNS message type: Notification
+2026-03-11 17:32:50,280 INFO app Dispatching processing for: raw/sensors_20260311T173249.csv
+2026-03-11 17:32:50,281 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173249.csv
+2026-03-11 17:32:50,366 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:32:50,459 INFO baseline Baseline loaded from S3
+2026-03-11 17:32:50,460 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:32:50,621 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:32:50,716 INFO baseline Baseline saved to S3
+2026-03-11 17:32:50,716 INFO processor Baseline updated and saved to S3
+2026-03-11 17:32:50,763 INFO processor Synced log file to S3
+2026-03-11 17:32:50,796 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T173249.csv
+2026-03-11 17:33:44,731 INFO app Received SNS message type: Notification
+2026-03-11 17:33:44,731 INFO app Dispatching processing for: raw/sensors_20260311T173343.csv
+2026-03-11 17:33:44,732 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173343.csv
+2026-03-11 17:33:44,803 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:33:44,880 INFO baseline Baseline loaded from S3
+2026-03-11 17:33:44,881 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:33:45,040 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:33:45,103 INFO baseline Baseline saved to S3
+2026-03-11 17:33:45,104 INFO processor Baseline updated and saved to S3
+2026-03-11 17:33:45,152 INFO processor Synced log file to S3
+2026-03-11 17:33:45,181 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T173343.csv
+2026-03-11 17:34:39,315 INFO app Received SNS message type: Notification
+2026-03-11 17:34:39,315 INFO app Dispatching processing for: raw/sensors_20260311T173441.csv
+2026-03-11 17:34:39,316 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173441.csv
+2026-03-11 17:34:39,403 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:34:39,506 INFO baseline Baseline loaded from S3
+2026-03-11 17:34:39,507 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:34:39,669 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:34:39,733 INFO baseline Baseline saved to S3
+2026-03-11 17:34:39,733 INFO processor Baseline updated and saved to S3
+2026-03-11 17:34:39,764 INFO processor Synced log file to S3
+2026-03-11 17:34:39,794 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T173441.csv
+2026-03-11 17:35:33,959 INFO app Received SNS message type: Notification
+2026-03-11 17:35:33,959 INFO app Dispatching processing for: raw/sensors_20260311T173535.csv
+2026-03-11 17:35:33,960 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173535.csv
+2026-03-11 17:35:34,035 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:35:34,110 INFO baseline Baseline loaded from S3
+2026-03-11 17:35:34,111 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:35:34,272 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:35:34,347 INFO baseline Baseline saved to S3
+2026-03-11 17:35:34,347 INFO processor Baseline updated and saved to S3
+2026-03-11 17:35:34,421 INFO processor Synced log file to S3
+2026-03-11 17:35:34,452 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T173535.csv
+2026-03-11 17:36:29,367 INFO app Received SNS message type: Notification
+2026-03-11 17:36:29,367 INFO app Dispatching processing for: raw/sensors_20260311T173629.csv
+2026-03-11 17:36:29,368 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173629.csv
+2026-03-11 17:36:29,441 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:36:29,522 INFO baseline Baseline loaded from S3
+2026-03-11 17:36:29,523 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:36:29,684 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:36:29,751 INFO baseline Baseline saved to S3
+2026-03-11 17:36:29,751 INFO processor Baseline updated and saved to S3
+2026-03-11 17:36:29,862 INFO processor Synced log file to S3
+2026-03-11 17:36:29,889 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T173629.csv
+2026-03-11 17:37:23,995 INFO app Received SNS message type: Notification
+2026-03-11 17:37:23,995 INFO app Dispatching processing for: raw/sensors_20260311T173724.csv
+2026-03-11 17:37:23,996 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173724.csv
+2026-03-11 17:37:24,068 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:37:24,154 INFO baseline Baseline loaded from S3
+2026-03-11 17:37:24,155 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:37:24,317 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:37:24,419 INFO baseline Baseline saved to S3
+2026-03-11 17:37:24,419 INFO processor Baseline updated and saved to S3
+2026-03-11 17:37:24,517 INFO processor Synced log file to S3
+2026-03-11 17:37:24,552 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T173724.csv
+2026-03-11 17:38:18,571 INFO app Received SNS message type: Notification
+2026-03-11 17:38:18,571 INFO app Dispatching processing for: raw/sensors_20260311T173818.csv
+2026-03-11 17:38:18,572 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173818.csv
+2026-03-11 17:38:18,647 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:38:18,722 INFO baseline Baseline loaded from S3
+2026-03-11 17:38:18,723 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:38:18,891 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:38:18,974 INFO baseline Baseline saved to S3
+2026-03-11 17:38:18,974 INFO processor Baseline updated and saved to S3
+2026-03-11 17:38:19,051 INFO processor Synced log file to S3
+2026-03-11 17:38:19,108 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T173818.csv
+2026-03-11 17:39:13,306 INFO app Received SNS message type: Notification
+2026-03-11 17:39:13,306 INFO app Dispatching processing for: raw/sensors_20260311T173912.csv
+2026-03-11 17:39:13,307 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T173912.csv
+2026-03-11 17:39:13,390 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:39:13,492 INFO baseline Baseline loaded from S3
+2026-03-11 17:39:13,493 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:39:13,652 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:39:13,744 INFO baseline Baseline saved to S3
+2026-03-11 17:39:13,744 INFO processor Baseline updated and saved to S3
+2026-03-11 17:39:13,794 INFO processor Synced log file to S3
+2026-03-11 17:39:13,829 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T173912.csv
+2026-03-11 17:40:08,016 INFO app Received SNS message type: Notification
+2026-03-11 17:40:08,016 INFO app Dispatching processing for: raw/sensors_20260311T174007.csv
+2026-03-11 17:40:08,017 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174007.csv
+2026-03-11 17:40:08,101 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:40:08,173 INFO baseline Baseline loaded from S3
+2026-03-11 17:40:08,174 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:40:08,335 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:40:08,401 INFO baseline Baseline saved to S3
+2026-03-11 17:40:08,401 INFO processor Baseline updated and saved to S3
+2026-03-11 17:40:08,483 INFO processor Synced log file to S3
+2026-03-11 17:40:08,513 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T174007.csv
+2026-03-11 17:41:02,475 INFO app Received SNS message type: Notification
+2026-03-11 17:41:02,475 INFO app Dispatching processing for: raw/sensors_20260311T174101.csv
+2026-03-11 17:41:02,476 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174101.csv
+2026-03-11 17:41:02,596 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:41:02,742 INFO baseline Baseline loaded from S3
+2026-03-11 17:41:02,743 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:41:02,976 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:41:03,049 INFO baseline Baseline saved to S3
+2026-03-11 17:41:03,049 INFO processor Baseline updated and saved to S3
+2026-03-11 17:41:03,102 INFO processor Synced log file to S3
+2026-03-11 17:41:03,134 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T174101.csv
+2026-03-11 17:41:57,232 INFO app Received SNS message type: Notification
+2026-03-11 17:41:57,232 INFO app Dispatching processing for: raw/sensors_20260311T174159.csv
+2026-03-11 17:41:57,234 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174159.csv
+2026-03-11 17:41:57,312 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:41:57,433 INFO baseline Baseline loaded from S3
+2026-03-11 17:41:57,434 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:41:57,594 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 17:41:57,660 INFO baseline Baseline saved to S3
+2026-03-11 17:41:57,660 INFO processor Baseline updated and saved to S3
+2026-03-11 17:41:57,693 INFO processor Synced log file to S3
+2026-03-11 17:41:57,724 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T174159.csv
+2026-03-11 17:42:51,974 INFO app Received SNS message type: Notification
+2026-03-11 17:42:51,974 INFO app Dispatching processing for: raw/sensors_20260311T174253.csv
+2026-03-11 17:42:51,975 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174253.csv
+2026-03-11 17:42:52,053 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:42:52,127 INFO baseline Baseline loaded from S3
+2026-03-11 17:42:52,129 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:42:52,291 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:42:52,353 INFO baseline Baseline saved to S3
+2026-03-11 17:42:52,353 INFO processor Baseline updated and saved to S3
+2026-03-11 17:42:52,382 INFO processor Synced log file to S3
+2026-03-11 17:42:52,410 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T174253.csv
+2026-03-11 17:43:47,293 INFO app Received SNS message type: Notification
+2026-03-11 17:43:47,293 INFO app Dispatching processing for: raw/sensors_20260311T174347.csv
+2026-03-11 17:43:47,294 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174347.csv
+2026-03-11 17:43:47,422 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:43:47,508 INFO baseline Baseline loaded from S3
+2026-03-11 17:43:47,509 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:43:47,670 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:43:47,772 INFO baseline Baseline saved to S3
+2026-03-11 17:43:47,772 INFO processor Baseline updated and saved to S3
+2026-03-11 17:43:47,806 INFO processor Synced log file to S3
+2026-03-11 17:43:47,834 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T174347.csv
+2026-03-11 17:44:41,954 INFO app Received SNS message type: Notification
+2026-03-11 17:44:41,954 INFO app Dispatching processing for: raw/sensors_20260311T174442.csv
+2026-03-11 17:44:41,955 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174442.csv
+2026-03-11 17:44:42,032 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:44:42,107 INFO baseline Baseline loaded from S3
+2026-03-11 17:44:42,108 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:44:42,270 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:44:42,356 INFO baseline Baseline saved to S3
+2026-03-11 17:44:42,356 INFO processor Baseline updated and saved to S3
+2026-03-11 17:44:42,416 INFO processor Synced log file to S3
+2026-03-11 17:44:42,446 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T174442.csv
+2026-03-11 17:45:36,638 INFO app Received SNS message type: Notification
+2026-03-11 17:45:36,638 INFO app Dispatching processing for: raw/sensors_20260311T174536.csv
+2026-03-11 17:45:36,639 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174536.csv
+2026-03-11 17:45:36,719 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:45:36,823 INFO baseline Baseline loaded from S3
+2026-03-11 17:45:36,824 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:45:36,986 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 17:45:37,047 INFO baseline Baseline saved to S3
+2026-03-11 17:45:37,047 INFO processor Baseline updated and saved to S3
+2026-03-11 17:45:37,077 INFO processor Synced log file to S3
+2026-03-11 17:45:37,108 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T174536.csv
+2026-03-11 17:46:31,259 INFO app Received SNS message type: Notification
+2026-03-11 17:46:31,259 INFO app Dispatching processing for: raw/sensors_20260311T174631.csv
+2026-03-11 17:46:31,260 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174631.csv
+2026-03-11 17:46:31,346 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:46:31,421 INFO baseline Baseline loaded from S3
+2026-03-11 17:46:31,422 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:46:31,583 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:46:31,654 INFO baseline Baseline saved to S3
+2026-03-11 17:46:31,655 INFO processor Baseline updated and saved to S3
+2026-03-11 17:46:31,810 INFO processor Synced log file to S3
+2026-03-11 17:46:31,850 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T174631.csv
+2026-03-11 17:47:26,071 INFO app Received SNS message type: Notification
+2026-03-11 17:47:26,071 INFO app Dispatching processing for: raw/sensors_20260311T174725.csv
+2026-03-11 17:47:26,072 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174725.csv
+2026-03-11 17:47:26,161 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:47:26,233 INFO baseline Baseline loaded from S3
+2026-03-11 17:47:26,234 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:47:26,395 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:47:26,473 INFO baseline Baseline saved to S3
+2026-03-11 17:47:26,474 INFO processor Baseline updated and saved to S3
+2026-03-11 17:47:26,536 INFO processor Synced log file to S3
+2026-03-11 17:47:26,588 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T174725.csv
+2026-03-11 17:48:21,117 INFO app Received SNS message type: Notification
+2026-03-11 17:48:21,117 INFO app Dispatching processing for: raw/sensors_20260311T174822.csv
+2026-03-11 17:48:21,118 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174822.csv
+2026-03-11 17:48:21,192 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:48:21,282 INFO baseline Baseline loaded from S3
+2026-03-11 17:48:21,283 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:48:21,443 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:48:21,508 INFO baseline Baseline saved to S3
+2026-03-11 17:48:21,508 INFO processor Baseline updated and saved to S3
+2026-03-11 17:48:21,565 INFO processor Synced log file to S3
+2026-03-11 17:48:21,605 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T174822.csv
+2026-03-11 17:49:15,813 INFO app Received SNS message type: Notification
+2026-03-11 17:49:15,813 INFO app Dispatching processing for: raw/sensors_20260311T174917.csv
+2026-03-11 17:49:15,814 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T174917.csv
+2026-03-11 17:49:15,892 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:49:15,997 INFO baseline Baseline loaded from S3
+2026-03-11 17:49:15,998 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:49:16,160 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:49:16,230 INFO baseline Baseline saved to S3
+2026-03-11 17:49:16,231 INFO processor Baseline updated and saved to S3
+2026-03-11 17:49:16,267 INFO processor Synced log file to S3
+2026-03-11 17:49:16,299 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T174917.csv
+2026-03-11 17:50:10,480 INFO app Received SNS message type: Notification
+2026-03-11 17:50:10,480 INFO app Dispatching processing for: raw/sensors_20260311T175011.csv
+2026-03-11 17:50:10,481 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175011.csv
+2026-03-11 17:50:10,568 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:50:10,641 INFO baseline Baseline loaded from S3
+2026-03-11 17:50:10,643 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:50:10,803 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:50:10,890 INFO baseline Baseline saved to S3
+2026-03-11 17:50:10,890 INFO processor Baseline updated and saved to S3
+2026-03-11 17:50:10,935 INFO processor Synced log file to S3
+2026-03-11 17:50:10,966 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T175011.csv
+2026-03-11 17:51:05,109 INFO app Received SNS message type: Notification
+2026-03-11 17:51:05,109 INFO app Dispatching processing for: raw/sensors_20260311T175106.csv
+2026-03-11 17:51:05,110 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175106.csv
+2026-03-11 17:51:05,195 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:51:05,278 INFO baseline Baseline loaded from S3
+2026-03-11 17:51:05,280 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:51:05,441 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:51:05,506 INFO baseline Baseline saved to S3
+2026-03-11 17:51:05,506 INFO processor Baseline updated and saved to S3
+2026-03-11 17:51:05,549 INFO processor Synced log file to S3
+2026-03-11 17:51:05,577 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T175106.csv
+2026-03-11 17:51:59,981 INFO app Received SNS message type: Notification
+2026-03-11 17:51:59,981 INFO app Dispatching processing for: raw/sensors_20260311T175200.csv
+2026-03-11 17:51:59,982 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175200.csv
+2026-03-11 17:52:00,110 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:52:00,241 INFO baseline Baseline loaded from S3
+2026-03-11 17:52:00,242 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:52:00,407 INFO detector Detection complete: 7/100 anomalies found
+2026-03-11 17:52:00,473 INFO baseline Baseline saved to S3
+2026-03-11 17:52:00,473 INFO processor Baseline updated and saved to S3
+2026-03-11 17:52:00,511 INFO processor Synced log file to S3
+2026-03-11 17:52:00,541 INFO processor Done: 7/100 anomalies flagged for raw/sensors_20260311T175200.csv
+2026-03-11 17:52:55,349 INFO app Received SNS message type: Notification
+2026-03-11 17:52:55,349 INFO app Dispatching processing for: raw/sensors_20260311T175254.csv
+2026-03-11 17:52:55,350 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175254.csv
+2026-03-11 17:52:55,464 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:52:55,557 INFO baseline Baseline loaded from S3
+2026-03-11 17:52:55,558 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:52:55,717 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:52:55,797 INFO baseline Baseline saved to S3
+2026-03-11 17:52:55,797 INFO processor Baseline updated and saved to S3
+2026-03-11 17:52:55,858 INFO processor Synced log file to S3
+2026-03-11 17:52:55,889 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T175254.csv
+2026-03-11 17:53:49,836 INFO app Received SNS message type: Notification
+2026-03-11 17:53:49,836 INFO app Dispatching processing for: raw/sensors_20260311T175349.csv
+2026-03-11 17:53:49,837 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175349.csv
+2026-03-11 17:53:49,913 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:53:50,072 INFO baseline Baseline loaded from S3
+2026-03-11 17:53:50,073 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:53:50,233 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:53:50,298 INFO baseline Baseline saved to S3
+2026-03-11 17:53:50,298 INFO processor Baseline updated and saved to S3
+2026-03-11 17:53:50,334 INFO processor Synced log file to S3
+2026-03-11 17:53:50,369 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T175349.csv
+2026-03-11 17:54:44,566 INFO app Received SNS message type: Notification
+2026-03-11 17:54:44,566 INFO app Dispatching processing for: raw/sensors_20260311T175443.csv
+2026-03-11 17:54:44,567 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175443.csv
+2026-03-11 17:54:44,643 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:54:44,734 INFO baseline Baseline loaded from S3
+2026-03-11 17:54:44,735 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:54:44,895 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:54:45,003 INFO baseline Baseline saved to S3
+2026-03-11 17:54:45,004 INFO processor Baseline updated and saved to S3
+2026-03-11 17:54:45,108 INFO processor Synced log file to S3
+2026-03-11 17:54:45,143 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T175443.csv
+2026-03-11 17:55:39,153 INFO app Received SNS message type: Notification
+2026-03-11 17:55:39,153 INFO app Dispatching processing for: raw/sensors_20260311T175540.csv
+2026-03-11 17:55:39,154 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175540.csv
+2026-03-11 17:55:39,231 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:55:39,312 INFO baseline Baseline loaded from S3
+2026-03-11 17:55:39,313 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:55:39,474 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 17:55:39,594 INFO baseline Baseline saved to S3
+2026-03-11 17:55:39,594 INFO processor Baseline updated and saved to S3
+2026-03-11 17:55:39,626 INFO processor Synced log file to S3
+2026-03-11 17:55:39,649 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T175540.csv
+2026-03-11 17:56:33,906 INFO app Received SNS message type: Notification
+2026-03-11 17:56:33,906 INFO app Dispatching processing for: raw/sensors_20260311T175635.csv
+2026-03-11 17:56:33,907 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175635.csv
+2026-03-11 17:56:33,985 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:56:34,105 INFO baseline Baseline loaded from S3
+2026-03-11 17:56:34,106 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:56:34,268 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:56:34,334 INFO baseline Baseline saved to S3
+2026-03-11 17:56:34,334 INFO processor Baseline updated and saved to S3
+2026-03-11 17:56:34,377 INFO processor Synced log file to S3
+2026-03-11 17:56:34,409 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T175635.csv
+2026-03-11 17:57:28,427 INFO app Received SNS message type: Notification
+2026-03-11 17:57:28,427 INFO app Dispatching processing for: raw/sensors_20260311T175729.csv
+2026-03-11 17:57:28,428 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175729.csv
+2026-03-11 17:57:28,507 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:57:28,582 INFO baseline Baseline loaded from S3
+2026-03-11 17:57:28,583 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:57:28,743 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:57:28,812 INFO baseline Baseline saved to S3
+2026-03-11 17:57:28,813 INFO processor Baseline updated and saved to S3
+2026-03-11 17:57:28,889 INFO processor Synced log file to S3
+2026-03-11 17:57:28,925 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T175729.csv
+2026-03-11 17:58:23,883 INFO app Received SNS message type: Notification
+2026-03-11 17:58:23,883 INFO app Dispatching processing for: raw/sensors_20260311T175824.csv
+2026-03-11 17:58:23,884 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T175824.csv
+2026-03-11 17:58:23,989 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 17:58:24,063 INFO baseline Baseline loaded from S3
+2026-03-11 17:58:24,064 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 17:58:24,224 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 17:58:24,335 INFO baseline Baseline saved to S3
+2026-03-11 17:58:24,335 INFO processor Baseline updated and saved to S3
+2026-03-11 17:58:24,432 INFO processor Synced log file to S3
+2026-03-11 17:58:24,482 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T175824.csv
+2026-03-11 20:05:37,844 WARNING uvicorn.error Invalid HTTP request received.
+2026-03-11 20:05:48,806 WARNING uvicorn.error Invalid HTTP request received.
+2026-03-11 20:07:35,854 WARNING uvicorn.error Invalid HTTP request received.
+2026-03-11 20:07:37,910 WARNING uvicorn.error Invalid HTTP request received.
+2026-03-11 20:51:46,936 INFO app Received SNS message type: Notification
+2026-03-11 20:51:46,937 INFO app Dispatching processing for: raw/sensors_20260311T205146.csv
+2026-03-11 20:51:46,938 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T205146.csv
+2026-03-11 20:51:47,013 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 20:51:47,106 INFO baseline Baseline loaded from S3
+2026-03-11 20:51:47,107 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 20:51:47,273 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 20:51:47,330 INFO baseline Baseline saved to S3
+2026-03-11 20:51:47,331 INFO processor Baseline updated and saved to S3
+2026-03-11 20:51:47,367 INFO processor Synced log file to S3
+2026-03-11 20:51:47,391 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T205146.csv
+2026-03-11 20:52:41,715 INFO app Received SNS message type: Notification
+2026-03-11 20:52:41,715 INFO app Dispatching processing for: raw/sensors_20260311T205241.csv
+2026-03-11 20:52:41,716 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T205241.csv
+2026-03-11 20:52:41,797 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 20:52:41,898 INFO baseline Baseline loaded from S3
+2026-03-11 20:52:41,899 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 20:52:42,062 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 20:52:42,127 INFO baseline Baseline saved to S3
+2026-03-11 20:52:42,127 INFO processor Baseline updated and saved to S3
+2026-03-11 20:52:42,217 INFO processor Synced log file to S3
+2026-03-11 20:52:42,252 INFO processor Done: 5/100 anomalies flagged for raw/sensors_20260311T205241.csv
+2026-03-11 20:53:37,000 INFO app Received SNS message type: Notification
+2026-03-11 20:53:37,000 INFO app Dispatching processing for: raw/sensors_20260311T205336.csv
+2026-03-11 20:53:37,002 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T205336.csv
+2026-03-11 20:53:37,081 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 20:53:37,163 INFO baseline Baseline loaded from S3
+2026-03-11 20:53:37,164 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 20:53:37,327 INFO detector Detection complete: 6/100 anomalies found
+2026-03-11 20:53:37,431 INFO baseline Baseline saved to S3
+2026-03-11 20:53:37,431 INFO processor Baseline updated and saved to S3
+2026-03-11 20:53:37,497 INFO processor Synced log file to S3
+2026-03-11 20:53:37,527 INFO processor Done: 6/100 anomalies flagged for raw/sensors_20260311T205336.csv
+2026-03-11 20:54:31,643 INFO app Received SNS message type: Notification
+2026-03-11 20:54:31,643 INFO app Dispatching processing for: raw/sensors_20260311T205430.csv
+2026-03-11 20:54:31,644 INFO processor Processing: s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/sensors_20260311T205430.csv
+2026-03-11 20:54:31,715 INFO processor Loaded 100 rows, columns: ['timestamp', 'temperature', 'humidity', 'pressure', 'wind_speed']
+2026-03-11 20:54:31,787 INFO baseline Baseline loaded from S3
+2026-03-11 20:54:31,788 INFO detector Running anomaly detection with method=both on 100 rows
+2026-03-11 20:54:31,950 INFO detector Detection complete: 5/100 anomalies found
+2026-03-11 20:54:32,009 INFO baseline Baseline saved to S3
+2026-03-11 20:54:32,009 INFO processor Baseline updated and saved to S3

@@ -81,3 +81,19 @@ aws s3 cp sensors_20260224T001051.csv s3://anomaly-detection-s3bucket-ajvymm13wc
 **Result:** PASS - 6 anomalies detected with Z-score flags (wind_speed, pressure, humidity) and IsolationForest flags
 
 ---
+
+## Phase 6: 60-Minute Unattended Run
+
+### Test 6.1: Test producer uploaded sufficient files
+**How:** `aws s3 ls s3://anomaly-detection-s3bucket-ajvymm13wcon/raw/ | wc -l`
+**Result:** PASS - 123 files uploaded (exceeds 60 minimum)
+
+### Test 6.2: Baseline has sufficient observations
+**How:** `cat submit/baseline.json`
+**Result:** PASS - 12,300 observations per channel (123 x 100 rows). All channels mature (well above 30 threshold). Mean values: temp=22.03, humidity=55.00, pressure=1012.98, wind_speed=9.99
+
+### Test 6.3: Log file collected from S3
+**How:** `aws s3 cp s3://anomaly-detection-s3bucket-ajvymm13wcon/logs/anomaly_detection.log submit/anomaly_detection.log`
+**Result:** PASS - Log file downloaded to submit/
+
+---
